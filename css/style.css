@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: roboto condensed;
+
+}
+
+h1 {
+    font size: 40pt;
+
+}
+
+body[ font-family: noto serif backround-color: :red color:#323c4b] header {
+    text - align: center;
+
+
+
+}
