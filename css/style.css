@@ -1,23 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: roboto condensed;
-
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #8d3213;
 }
 
-h1 {
-    font size: 40pt;
 
+header {
+  background-color: #1f2933;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+
+  
 }
 
-body[ font-family: noto serif backround-color: :red color:#323c4b] header {
-    text - align: center;
+main {
+  text-align: center;
+  padding: 20px;
+}
 
 
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
 
+.card img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #555;
+}
+
+
+.goals {
+  background: #ffe4f1;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.goals ul {
+  padding-left: 20px;
+}
+
+.goals li {
+  margin: 8px 0;
+}
+
+
+footer {
+  background-color: #1f2933;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  border: 5px solid #1f2933;   
+  padding: 5px;                
+  background-color: white;     
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 300px;   
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;     
+  border: 5px solid #1f2933;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.bottom-box {
+  border-bottom: 5px solid #5b5bd6;
 }
