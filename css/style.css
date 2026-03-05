@@ -90,3 +90,22 @@ img {
 .bottom-box {
   border-bottom: 5px solid #5b5bd6;
 }
+#hero p,
+#bio p {
+  transition: all 0.3s ease;
+}
+
+#hero p:hover,
+#bio p:hover {
+  color: #5b5bd6;
+  transform: translateY(-15px);
+  cursor: pointer;
+}
+#hero p {
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+#bio p {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
