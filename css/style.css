@@ -108,4 +108,63 @@ img {
 #bio p {
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
+#bio p {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* ===== Tablet View ===== */
+@media screen and (min-width: 60em) {
+
+  figure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  #lit {
+    max-width: 100%;
+    columns: 40rem;
+  }
+
+}
+/* ===== Large Screens ===== */
+@media screen and (min-width: 100em) {
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #gallery h2 {
+    grid-column: 1 / -1;
+  }
+
+  figure {
+    display: block;
+  }
+
+  hr {
+    display: none;
+  }
+
+}
 
