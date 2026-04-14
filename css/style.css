@@ -2,19 +2,19 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #8d3213;
+  background-color: #99e1d1;
 }
 
 
 header {
-  background-color: #1f2933;
+  background-color: #f0f7f4;
   color: white;
   text-align: center;
   padding: 40px 0;
   font-size: 24px;
   letter-spacing: 1px;
 
-  
+
 }
 
 main {
@@ -24,7 +24,7 @@ main {
 
 
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
@@ -122,7 +122,7 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-/* ===== Tablet View ===== */
+
 @media screen and (min-width: 60em) {
 
   figure {
@@ -145,7 +145,7 @@ h2 {
   }
 
 }
-/* ===== Large Screens ===== */
+
 @media screen and (min-width: 100em) {
 
   #gallery {
@@ -167,4 +167,19 @@ h2 {
   }
 
 }
+#video-section {
+  text-align: center;
+  margin: 40px 0;
+}
 
+#myVideo {
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 20px auto;
+}
+
+.caption {
+  margin-top: 10px;
+}
