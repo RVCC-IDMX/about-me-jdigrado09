@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The About Me</title>
-
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
 
+ <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo-96X96.svg" alt="Blue oragami bird (Bob)">
+            <h1>The About ME</h1>
+        </div>
 
-    <header>
-     
-        <img src="img/logo-96X96.svg" alt="Blue oragami bird (Bob)">
-        <H1>The About ME</H1>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#bio" class="nav-links">Bio</a></li>
+                <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                <li><a href="#lit" class="nav-links">Blog</a></li>
+                <li><a href="#contact" class="nav-links">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-
-    </header>
     <main>
-  
-
         <section id="hero">
             <img src="img/avataaars.png" alt="A avatar image of not me">
-
             <div>
                 <p>Joseph Digrado</p>
                 <p>Flemington, New Jersey</p>
@@ -32,117 +39,93 @@
         </section>
 
         <section id="bio">
-
             <div>
                 <p>i want to play golf</p>
                 <p>i want to go be warm </p>
                 <p>i want to eat</p>
-
             </div>
         </section>
 
+        <section id="lit">
+            <h2>Blog</h2>
+            <p>This is where your future blog paragraphs will go!</p>
+        </section>
     </main>
-<section class="hobbies">
-  <h2>My Hobbies</h2>
-  <ul>
-    <li>Playing Video Games</li>
-    <li>Playing sports and being outside</li>
-    <li>Listening to Music</li>
 
-  </ul>
-  <section class="gallery">
-  
-  <hr>
-  <h2>Photo Gallery</h2>
+    <section class="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Playing Video Games</li>
+            <li>Playing sports and being outside</li>
+            <li>Listening to Music</li>
+        </ul>
 
+        <section class="gallery" id="gallery">
+            <hr>
+            <h2>Photo Gallery</h2>
+            <figure>
+                <img src="img/640w.jpg" alt="golf">
+            </figure>
+            <hr>
+            <figure>
+                <img src="img/640w2.jpg" alt="golf">
+            </figure>
+            <hr>
+            <figure>
+                <img src="img/640w3.jpg" alt="little baby">
+            </figure>
+        </section>
+    </section>
 
-  <figure>
-    <img src="img/640w.jpg" alt="golf">
-</figure>
+    <section id="video-section">
+        <h2>My Website Walkthrough</h2>
+        <iframe id="myVideo" src="https://www.youtube.com/embed/5ounelW1pyM" title="My Website Walkthrough" frameborder="0" allowfullscreen></iframe>
+        <p class="caption">
+            In this video, I show my midterm website and show how I designed and built it.
+        </p>
+    </section>
 
-<hr>
+    <hr>
 
-  <figure>
-    <img src="img/640w2.jpg" alt="golf">
-  </figure>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form name="contact-me" method="post" data-netlify="true">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label>Name *</label>
+                <input type="text" name="name" required>
 
-  <hr>
+                <label>Email *</label>
+                <input type="email" name="email" required>
 
-  <figure>
-    <img src="img/640w3.jpg" alt="little baby">
-  </figure>
+                <label>Phone</label>
+                <input type="tel" name="phone">
 
-</section>
-</section>
+                <label>Phone Type</label>
+                <select name="phonetype">
+                    <option value="">Select one</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="home">Home</option>
+                    <option value="work">Work</option>
+                </select>
 
-<section id="video-section">
-  <h2>My Website Walkthrough</h2>
+                <label>Message</label>
+                <textarea name="message"></textarea>
 
-  <iframe id="myVideo"
-  src="https://www.youtube.com/embed/5ounelW1pyM"
-  title="My Website Walkthrough"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+                <p>Follow up?</p>
+                <ul>
+                    <li><input type="radio" name="followup" value="yes"> Yes</li>
+                    <li><input type="radio" name="followup" value="no"> No</li>
+                </ul>
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+    </section>
 
-
-  <p class="caption">
-    In this video, I show my midterm website and show how I designed and built it.
-  </p>
-</section>
-<hr>
-<section id="contact">
-  <h2>Contact</h2>
-
-  <form name="contact-me" method="post" data-netlify="true">
-    <fieldset>
-      <legend>Contact Form</legend>
-
-      <label>Name *</label>
-      <input type="text" name="name" required>
-
-      <label>Email *</label>
-      <input type="email" name="email" required>
-
-      <label>Phone</label>
-      <input type="tel" name="phone">
-
-      <label>Phone Type</label>
-      <select name="phonetype">
-        <option value="">Select one</option>
-        <option value="mobile">Mobile</option>
-        <option value="home">Home</option>
-        <option value="work">Work</option>
-      </select>
-
-      <label>Message</label>
-      <textarea name="message"></textarea>
-
-      <p>Follow up?</p>
-      <ul>
-        <li><input type="radio" name="followup" value="yes"> Yes</li>
-        <li><input type="radio" name="followup" value="no"> No</li>
-      </ul>
-
-      <button type="submit">Send</button>
-
-    </fieldset>
-  </form>
-</section>
-   
-  </form>
-</section>
-
-
-
-<footer></footer>
-
-
-<p>now on netlify!</p>
-
-<p>@ &copy; 2026 joseph digrado</p>
-
+    <footer>
+        <p>now on netlify!</p>
+        <p>&copy; 2026 joseph digrado</p>
+    </footer>
 
 </body>
-
 </html>
